@@ -21,11 +21,11 @@
         </li>
         <li>
           <a href="categories.html" class="lang lang-en">Categories</a>
-          <a href="categories-tr.html" class="lang lang-tr">Kategoriler</a>
+          <a href="categories.html" class="lang lang-tr">Kategoriler</a>
         </li>
         <li>
           <a href="contact.html"  class="lang lang-en">Contact</a>
-          <a href="contact-tr.html" class="lang lang-tr">İletişim</a>
+          <a href="contact.html" class="lang lang-tr">İletişim</a>
         </li>
       </ul>
     </div>
@@ -37,6 +37,58 @@
     </div>
 
 
+    <section class="order-section container">
+
+    <!-- Başlık -->
+    <h2 class="lang lang-en">Place Your Order</h2>
+    <h2 class="lang lang-tr">Sipariş Ver</h2>
+
+    <!-- Seçilen Ürün Görseli -->
+    <div class="selected-item">
+      <img id="selected-img" src="images/placeholder.jpeg" alt="Selected Flower">
+    </div>
+
+    <!-- Sipariş Formu -->
+    <form id="order-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="firstName" class="lang lang-en">First Name</label>
+        <label for="firstName" class="lang lang-tr">Ad</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName" class="lang lang-en">Last Name</label>
+        <label for="lastName" class="lang lang-tr">Soyad</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone" class="lang lang-en">Phone Number</label>
+        <label for="phone" class="lang lang-tr">Telefon Numarası</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="address" class="lang lang-en">Address</label>
+        <label for="address" class="lang lang-tr">Adres</label>
+           <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+
+
+      <button type="submit" class="lang lang-en">Submit Order</button>
+      <button type="submit" class="lang lang-tr">Siparişi Gönder</button>
+    </form>
+
+    <div id="confirmation-message-en" class="confirmation">
+      Your order has been successfully placed! Thank you for choosing Beauty Flowers.
+    </div>
+    <div id="confirmation-message-tr" class="confirmation ">
+      Siparişiniz başarıyla alındı! Beauty Flowers’ı tercih ettiğiniz için teşekkür ederiz.
+    </div>
+  </section>
+
+  
 
     <section class="social">
     <div class="container text-center">
@@ -47,6 +99,7 @@
         </ul>
     </div>
 </section>
+
    <section class="footer">
         <div class="container text-center">
             <p>© 2023 Beauty Flowers. All rights reserved. - Elif</p>
