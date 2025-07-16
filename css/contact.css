@@ -1,3 +1,24 @@
+/* SOSYAL İKONLAR */
+.social {
+    background: #fff;
+    padding: 30px 0;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social ul li a img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.social ul li a img:hover {
+    transform: scale(1.1);
+}
 * {
     margin: 10px;
     padding: 0;
@@ -157,29 +178,3 @@ body {
   color: #7a2434;
 }
 
-/* SOSYAL İKONLAR */
-.social {
-    background: #fff;
-    padding: 30px 0;
-}
-
-.social ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social ul li a img {
-    width: 40px;
-    transition: transform 0.3s;
-}
-
-.social ul li a img:hover {
-    transform: scale(1.1);
-}
-* {
-    margin: 10px;
-    padding: 0;
-    box-sizing: border-box;
-}
