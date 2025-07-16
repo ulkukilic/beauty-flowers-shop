@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+}
+
+/* GENEL KAPSAYICI */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* LOGO */
+.navbar-logo {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ed5a7c;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* MENÜ ORTADA */
+.navbar .menu {
+    position: relative;
+    z-index: 1001;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #7a2434 ;
+    font-weight: 600;
+    font-size: 18px;
+     visibility: visible !important;  /* Menü öğeleri görünür olacak şekilde ayarlandı */
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    color: #85001a; /* daha koyu bordo */
+}
+
+/* HERO BÖLÜMÜ */
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 120px 5% 60px; /* Menü yüksekliği kadar üstten boşluk */
+    background-color: #f4f4f4;
+}
+
+.hero-image img {
+    width: 35%; /* Sayfanın yaklaşık çeyreği kadar */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero-image h1 {
+    font-size: 70px;
+    color: #a3001f; /* bordo */
+    font-weight: 800;
+    font-style: italic;
+    margin-left: 60px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+ /* position: absolute; // Resim tam ekran kaplasın
+    top: 0;
+    left: 0;
+    z-index: 1; // Resim arka planda olsun*/
+
+
+
+/* DİL BUTONLARI ALT SOLDA SAYDAM */
+.lang-switch {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    opacity: 0.6;
+    z-index: 20;
+}
+
+.lang-switch button {
+    background-color: transparent;
+    color: rgb(144, 53, 53);
+    border: 1px solid white;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.lang-switch button:hover {
+    opacity: 1;
+}
+
+/* ARAMA ALANI */
+.flowers-search {
+    padding: 40px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.flowers-search input[type="search"] {
+    padding: 10px 20px;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.btn.btn-primary {
+    background-color: #a3001f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.btn-primary:hover {
+    background-color: #85001a;
+}
+
+/* SOSYAL İKONLAR */
+.social {
+    background: #fff;
+    padding: 30px 0;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social ul li a img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.social ul li a img:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+.footer {
+    background: #f1f1f1;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* DİL GÖRÜNÜRLÜĞÜ */
+.lang-tr {
+    display: none;  /* Sayfa ilk açıldığında Türkçe menü gözükmesin */
+}
+.lang-en {
+   
+     display: inline; 
+}
+
