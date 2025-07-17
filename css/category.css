@@ -199,3 +199,61 @@
     font-size: 14px;
     text-align: center;
 }
+/*  add_product page css file */
+       .form-container {
+            width: 90%; max-width: 500px;
+            margin: 60px auto 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-size: 1.75rem; 
+        }
+        .form-container h2 {
+            font-family: 'Playfair Display', serif;
+            color: #a3001f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+             font-size: 1.125rem;
+            color: #7a2434;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="file"],
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .form-container textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .form-container .btn-submit {
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #a3001f;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .form-container .btn-submit:hover {
+            background: #85001a;
+        }
+        .error {
+            color: #96243e;
+            text-align: center;
+            margin-bottom: 15px;
+        }
