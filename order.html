@@ -48,37 +48,38 @@
       <img id="selected-img" src="images/placeholder.jpeg" alt="Selected Flower">
     </div>
 
-    <!-- Sipariş Formu -->
-    <form id="order-form" action="#" method="POST">
+
+    <form id="order-form" action="/admin/submit_order.php" method="POST">
+
       <div class="form-group">
         <label for="firstName" class="lang lang-en">First Name</label>
         <label for="firstName" class="lang lang-tr">Ad</label>
-        <input type="text" id="firstName" name="firstName" required>
+        <input type="text" id="firstName" name="first_name" required>
       </div>
 
       <div class="form-group">
         <label for="lastName" class="lang lang-en">Last Name</label>
         <label for="lastName" class="lang lang-tr">Soyad</label>
-        <input type="text" id="lastName" name="lastName" required>
+        <input type="text" id="lastName" name="last_name" required>
       </div>
-      
+
       <div class="form-group">
         <label for="phone" class="lang lang-en">Phone Number</label>
         <label for="phone" class="lang lang-tr">Telefon Numarası</label>
         <input type="tel" id="phone" name="phone" required>
       </div>
 
-
       <div class="form-group">
         <label for="address" class="lang lang-en">Address</label>
         <label for="address" class="lang lang-tr">Adres</label>
-           <textarea id="address" name="address" rows="4" required></textarea>
+        <textarea id="address" name="address" rows="4" required></textarea>
       </div>
 
-
+      <input type="hidden" id="productId" name="product_id" value="">
       <button type="submit" class="lang lang-en">Submit Order</button>
       <button type="submit" class="lang lang-tr">Siparişi Gönder</button>
-    </form>
+</form>
+
 
     <div id="confirmation-message-en" class="confirmation">
       Your order has been successfully placed! Thank you for choosing Beauty Flowers.
@@ -107,5 +108,15 @@
     </section>
 
       <script src="js/javascript.js"></script>
+      <script>
+       document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const pid = params.get('product_id');
+      if (pid) {
+        document.getElementById('productId').value = pid;
+      }
+    });
+
+      </script>
     </body>
 </html>
