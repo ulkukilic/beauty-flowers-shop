@@ -1,0 +1,182 @@
+
+
+
+html, body {
+    height: 100%;
+    margin:0 ;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* for the auth form */
+.auth-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 120px auto 60px; 
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 2xl;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Form heading */
+.auth-form h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #a3001f;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Error message */
+.auth-form .error {
+    color: #96243e;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Labels */
+.auth-form label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    color: #7a2434;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Inputs */
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 15px 12px;
+    margin-top: 10px;
+    border: 2px solid #9c9898;
+    border-radius: 6px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Primary button (Login) */
+.auth-form .login-btn {
+    display: block;
+    width: 100%;
+    margin: 35px 0 10px;
+    padding: 15px;
+    background-color: #a3001f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form .login-btn:hover {
+    background-color: #85001a;
+}
+
+/* Secondary button (Register) */
+.auth-form .red-btn {
+    display: block;
+    margin: 35px 0 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: #6c2132;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form .red-btn:hover {
+    background-color: #7d293e;
+}
+
+/* Link under form */
+.auth-form p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-form p a {
+    color: #a3001f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-form p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    padding: 20px 0;
+    background: #f1f1f1;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* SOSYAL İKONLAR */
+.social {
+    background: #fff;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social ul li a img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.social ul li a img:hover {
+    transform: scale(1.1);
+}
+
+/* Logo styling  */
+.navbar-logo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ab2d4a;
+}
+
+.navbar-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+
+
