@@ -13,27 +13,17 @@ Guest Checkout: Quick order form without registration
 
 User Authentication: Secure login and sign-up
 
-## Order Management:
-
-Customers can view their past orders
+Order Management: Customers can view their past orders
 
 Admins can view and manage all orders
 
-## Product Catalog:
+Product Catalog:Arrangements, bouquets, orchids, potted plants, and more
 
-Arrangements, bouquets, orchids, potted plants, and more
+Admin Panel:Add, edit, and delete products
 
-### Admin Panel:
+Responsive Design: Works flawlessly on both desktop and mobile devices
 
-Add, edit, and delete products
-
-### Responsive Design: 
-
-Works flawlessly on both desktop and mobile devices
-
-### Bilingual Support: 
-
-Switch between Turkish and English
+Bilingual Support:  Switch between Turkish and English
 
 ## 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
