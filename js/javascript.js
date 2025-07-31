@@ -41,8 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const msgTr = document.getElementById('confirmation-message-tr');
 
   form.addEventListener('submit', e => {
-    e.preventDefault();        // asıl gönderimi engelle
-    // istersen burada form.validity check de yapabilirsin
+   // e.preventDefault();      
     form.style.display = 'none';
     msgEn.style.display  = 'block';
     msgTr.style.display  = 'block';
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const confTr = document.getElementById('confirmation-tr');
 
       form.addEventListener('submit', e => {
-        e.preventDefault();
+        //e.preventDefault();
         // Doğrulama başarılıysa:
         form.style.display = 'none';
         confEn.style.display = 'block';
