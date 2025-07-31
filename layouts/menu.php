@@ -1,6 +1,6 @@
 <section class="navbar">
    
-<div class="menu">
+<div class="menu" style=' margin-top: 40px; '>
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="orders.php">Orders</a></li>
